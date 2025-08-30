@@ -1,0 +1,100 @@
+c = a
+
+# is operator (same object)
+print(a is c)    # True
+print(a is b)    # False
+
+# is not operator
+print(a is not b)  # True
+print(a is not c)  # False
+```
+
+## Operator Precedence
+
+Python follows a specific order when evaluating expressions:
+
+1. **Parentheses** `()`
+2. **Exponentiation** `**`
+3. **Unary operators** `+x`, `-x`, `not x`
+4. **Multiplication/Division** `*`, `/`, `//`, `%`
+5. **Addition/Subtraction** `+`, `-`
+6. **Comparison** `==`, `!=`, `<`, `>`, `<=`, `>=`
+7. **Logical NOT** `not`
+8. **Logical AND** `and`
+9. **Logical OR** `or`
+
+```python
+result = 2 + 3 * 4 > 10 and not 5 == 6
+print(result)  # True
+
+# Breakdown:
+# 1. 3 * 4 = 12
+# 2. 2 + 12 = 14
+# 3. 14 > 10 = True
+# 4. 5 == 6 = False
+# 5. not False = True
+# 6. True and True = True
+```
+
+## Practice Exercises
+
+### Exercise 1: Calculator
+Create a simple calculator:
+
+```python
+# Simple calculator
+num1 = 15
+num2 = 4
+
+print(f"Numbers: {num1} and {num2}")
+print(f"Addition: {num1 + num2}")
+print(f"Subtraction: {num1 - num2}")
+print(f"Multiplication: {num1 * num2}")
+print(f"Division: {num1 / num2}")
+print(f"Floor Division: {num1 // num2}")
+print(f"Modulo: {num1 % num2}")
+print(f"Exponentiation: {num1 ** num2}")
+```
+
+### Exercise 2: Grade Calculator
+Calculate a student's grade:
+
+```python
+# Grade calculator
+assignment1 = 85
+assignment2 = 92
+assignment3 = 78
+exam = 88
+
+# Calculate average
+average = (assignment1 + assignment2 + assignment3 + exam) / 4
+
+# Determine letter grade
+if average >= 90:
+    grade = "A"
+elif average >= 80:
+    grade = "B"
+elif average >= 70:
+    grade = "C"
+elif average >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+print(f"Average: {average:.1f}")
+print(f"Grade: {grade}")
+```
+
+### Exercise 3: Password Validator
+Check if a password meets requirements:
+
+```python
+# Password validator
+password = "MyPassword123"
+min_length = 8
+has_uppercase = any(char.isupper() for char in password)
+has_lowercase = any(char.islower() for char in password)
+has_digit = any(char.isdigit() for char in password)
+
+# Check all conditions
+is_valid = (len(password) >= min_length and 

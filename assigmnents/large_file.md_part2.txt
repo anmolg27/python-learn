@@ -1,0 +1,100 @@
+b = 3
+
+# Equal to
+print(a == b)   # False
+
+# Not equal to
+print(a != b)   # True
+
+# Greater than
+print(a > b)    # True
+
+# Less than
+print(a < b)    # False
+
+# Greater than or equal to
+print(a >= b)   # True
+
+# Less than or equal to
+print(a <= b)   # False
+```
+
+### String Comparisons
+
+You can also compare strings:
+
+```python
+name1 = "Alice"
+name2 = "Bob"
+name3 = "Alice"
+
+print(name1 == name3)  # True
+print(name1 == name2)  # False
+print(name1 < name2)   # True (alphabetical order)
+print(name1 > name2)   # False
+```
+
+## Logical Operators
+
+These operators combine boolean values:
+
+```python
+# AND operator (both must be True)
+print(True and True)    # True
+print(True and False)   # False
+print(False and True)   # False
+print(False and False)  # False
+
+# OR operator (at least one must be True)
+print(True or True)     # True
+print(True or False)    # True
+print(False or True)    # True
+print(False or False)   # False
+
+# NOT operator (inverts the value)
+print(not True)         # False
+print(not False)        # True
+```
+
+### Real-world Examples
+
+```python
+age = 25
+has_license = True
+has_car = False
+
+# Can drive if age >= 18 AND has license
+can_drive = age >= 18 and has_license
+print(can_drive)  # True
+
+# Can get to work if has car OR has license (can rent)
+can_get_to_work = has_car or has_license
+print(can_get_to_work)  # True
+
+# Is not old enough to drink (assuming drinking age is 21)
+is_not_old_enough = not (age >= 21)
+print(is_not_old_enough)  # True
+```
+
+## Membership Operators
+
+Check if a value is in a sequence (we'll learn more about sequences later):
+
+```python
+# in operator
+fruits = ["apple", "banana", "orange"]
+print("apple" in fruits)    # True
+print("grape" in fruits)    # False
+
+# not in operator
+print("grape" not in fruits)  # True
+print("apple" not in fruits)  # False
+```
+
+## Identity Operators
+
+Check if two variables point to the same object:
+
+```python
+a = [1, 2, 3]
+b = [1, 2, 3]

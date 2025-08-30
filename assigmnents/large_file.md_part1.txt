@@ -1,0 +1,100 @@
+# 04. Operators and Expressions 🔢
+
+## What are Operators?
+
+Operators are symbols that perform operations on variables and values. Python has several types of operators that let you perform calculations, comparisons, and logical operations.
+
+## Arithmetic Operators
+
+These operators perform mathematical calculations:
+
+```python
+a = 10
+b = 3
+
+# Addition
+print(a + b)    # 13
+
+# Subtraction
+print(a - b)    # 7
+
+# Multiplication
+print(a * b)    # 30
+
+# Division (always returns float)
+print(a / b)    # 3.3333333333333335
+
+# Floor Division (returns integer)
+print(a // b)   # 3
+
+# Modulo (remainder)
+print(a % b)    # 1
+
+# Exponentiation (power)
+print(a ** b)   # 1000
+
+# Negative
+print(-a)       # -10
+```
+
+### Order of Operations (PEMDAS)
+
+Python follows the standard mathematical order of operations:
+
+```python
+result = 2 + 3 * 4 ** 2
+print(result)  # 50 (not 80!)
+
+# Breakdown:
+# 1. 4 ** 2 = 16
+# 2. 3 * 16 = 48
+# 3. 2 + 48 = 50
+
+# Use parentheses to control order
+result = (2 + 3) * 4 ** 2
+print(result)  # 80
+```
+
+## Assignment Operators
+
+These operators assign values to variables:
+
+```python
+x = 5
+print(x)  # 5
+
+# Addition assignment
+x += 3    # Same as x = x + 3
+print(x)  # 8
+
+# Subtraction assignment
+x -= 2    # Same as x = x - 2
+print(x)  # 6
+
+# Multiplication assignment
+x *= 4    # Same as x = x * 4
+print(x)  # 24
+
+# Division assignment
+x /= 3    # Same as x = x / 3
+print(x)  # 8.0
+
+# Floor division assignment
+x //= 2   # Same as x = x // 2
+print(x)  # 4.0
+
+# Modulo assignment
+x %= 3    # Same as x = x % 3
+print(x)  # 1.0
+
+# Exponentiation assignment
+x **= 3   # Same as x = x ** 3
+print(x)  # 1.0
+```
+
+## Comparison Operators
+
+These operators compare values and return True or False:
+
+```python
+a = 5

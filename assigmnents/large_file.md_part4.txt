@@ -1,0 +1,57 @@
+           has_uppercase and 
+           has_lowercase and 
+           has_digit)
+
+print(f"Password: {password}")
+print(f"Length >= {min_length}: {len(password) >= min_length}")
+print(f"Has uppercase: {has_uppercase}")
+print(f"Has lowercase: {has_lowercase}")
+print(f"Has digit: {has_digit}")
+print(f"Password is valid: {is_valid}")
+```
+
+### Exercise 4: Temperature Alert
+Create a temperature monitoring system:
+
+```python
+# Temperature monitoring
+current_temp = 75
+min_temp = 65
+max_temp = 80
+
+# Check temperature status
+is_cold = current_temp < min_temp
+is_hot = current_temp > max_temp
+is_comfortable = not is_cold and not is_hot
+
+print(f"Current temperature: {current_temp}°F")
+print(f"Temperature range: {min_temp}°F - {max_temp}°F")
+print(f"Is it cold? {is_cold}")
+print(f"Is it hot? {is_hot}")
+print(f"Is it comfortable? {is_comfortable}")
+
+# Generate alert
+if is_cold:
+    print("ALERT: Temperature is too low!")
+elif is_hot:
+    print("ALERT: Temperature is too high!")
+else:
+    print("Temperature is within normal range.")
+```
+
+## Key Takeaways
+
+✅ **Arithmetic operators** - `+`, `-`, `*`, `/`, `//`, `%`, `**`  
+✅ **Assignment operators** - `=`, `+=`, `-=`, `*=`, etc.  
+✅ **Comparison operators** - `==`, `!=`, `<`, `>`, `<=`, `>=`  
+✅ **Logical operators** - `and`, `or`, `not`  
+✅ **Operator precedence** - Use parentheses to control order  
+✅ **Boolean expressions** - Return True or False  
+
+## Next Steps
+
+Great! You now understand how to perform calculations and comparisons in Python. In the next lesson, we'll learn about [input and output](05-Input-and-Output.md) - how to get data from users and display results.
+
+---
+
+**💡 Pro Tip:** Use parentheses to make your code more readable, even when they're not strictly necessary. It makes the order of operations clear! 
